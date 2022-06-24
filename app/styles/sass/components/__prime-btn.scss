@@ -1,0 +1,10 @@
+.prime-btn {
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--white);
+  border: none;
+  padding: 11px 25px 11px 25px;
+  &:hover {
+    cursor: pointer;
+  }
+}

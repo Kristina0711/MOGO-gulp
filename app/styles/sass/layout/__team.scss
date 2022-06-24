@@ -1,0 +1,75 @@
+.team {
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+  }
+  &__item-image {
+    width: 100%;
+  }
+  &__item:hover &__item-image {
+    opacity: 0.1;
+    @include breakpoint(md) {
+      opacity: 1;
+    }
+  }
+  &__item:hover &__item-img {
+    transform: translate(-10px, -10px);
+    @include breakpoint(md) {
+      transform: translate(0);
+    }
+  }
+
+  &__item-img {
+    background: linear-gradient(
+      360deg,
+      rgba(237, 215, 137, 0.9) 0%,
+      rgba(233, 130, 131, 0.9) 100%
+    );
+    @include breakpoint(md) {
+    }
+  }
+  &__item-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2d3033;
+    padding: 30px 0;
+  }
+  &__item-work {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2d3033;
+    padding-bottom: 20px;
+  }
+  &__item-content {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    @include breakpoint(md) {
+      left: 84%;
+      top: 84%;
+      opacity: 1;
+    }
+  }
+
+  &__item:hover &__item-content {
+    opacity: 1;
+  }
+  &__item-icon {
+    width: 42px;
+    height: 42px;
+
+    // left: 50%;
+  }
+}

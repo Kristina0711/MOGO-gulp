@@ -1,0 +1,55 @@
+/* Futures */
+.futures {
+  padding: 0 15px;
+  background-color: var(--bg-color);
+  color: var(--white);
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 165px;
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      border-bottom: 2px solid #fff;
+    }
+    @include breakpoint(xl) {
+      margin: 0;
+    }
+  }
+
+  &__card {
+    padding: 35px 10px;
+    text-align: center;
+    border-left: 1px solid var(--white);
+    border-right: 1px solid var(--white);
+    @include breakpoint(md) {
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid var(--white);
+    }
+  }
+  &__card_big {
+    @include breakpoint(md) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  &__number {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 10px;
+    @include breakpoint(xl) {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 24px;
+    @include breakpoint(xl) {
+      font-weight: 500;
+      font-size: 28px;
+    }
+  }
+}

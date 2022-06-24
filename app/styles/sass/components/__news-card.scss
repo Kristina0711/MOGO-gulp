@@ -1,0 +1,15 @@
+.news-card {
+  display: flex;
+
+  &__content {
+    padding-left: 36px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}

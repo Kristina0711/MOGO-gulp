@@ -1,0 +1,128 @@
+/* Reviews  */
+.clients {
+  background-image: url(../images/dist/rew/bgimage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/dist/rew/bgim.png");
+    z-index: -1;}
+  
+  &__card {
+      display: flex;
+      @include breakpoint(md) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+    }
+    
+    &__img {
+      flex-shrink: 0;
+  
+      @include breakpoint(md) {
+     padding-bottom: 20px;
+      }
+    }
+    
+    &__icon {
+      width: 130px;
+      height: 130px;
+      @include breakpoint(xl) {
+      
+        width: 88px;
+        height: 88px;
+      
+    }
+    }
+    
+    
+    &__info {
+      padding-left: 50px;
+      @include breakpoint(md) {
+      padding-left: 0;
+      }
+    }
+    
+    &__name {
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--black);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      @include breakpoint(md) {
+      text-align: center;
+      }
+      @include breakpoint(xl) {
+      
+        font-size: 18px;
+      
+    }
+    }
+    
+    
+    &__work {
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--black);
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      @include breakpoint(md) {
+      text-align: center;
+      }
+      @include breakpoint(xl) {
+      
+        font-size: 14px;
+        // padding-bottom: 21px;
+      
+    }
+    }
+    
+    
+    &__work::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 2px;
+      background-color: var(--accent-color);
+      margin: 30px 0 30px 0;
+  
+      @include breakpoint(md) {
+      margin: 20px auto;
+      width: 134px;
+      }
+  
+      @include breakpoint(xl) {
+    
+        width: 47px;
+    
+    }
+    }
+    
+    
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--black);
+      padding-right: 5px;
+      padding-bottom: 40px;
+      @include breakpoint(md) {
+      text-align: center;
+      }
+      @include breakpoint(xl) {
+     
+        font-size: 14px;
+        padding-bottom: 25px;
+      
+    }
+    }
+}
+
+  
+  

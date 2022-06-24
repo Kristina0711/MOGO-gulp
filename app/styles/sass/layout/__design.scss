@@ -1,0 +1,51 @@
+.design {
+  padding-top: 43px;
+  padding-bottom: 57px;
+  background: url("../images/dist/design/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include breakpoint(xl) {
+    padding-bottom: 57px;
+  }
+  @include breakpoint(md) {
+    padding-top: 0px;
+  }
+
+  &__head {
+    margin-bottom: 59px;
+
+    @include breakpoint(xl) {
+      margin-bottom: 36px;
+    }
+    @include breakpoint(sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    max-width: 660px;
+    margin: 0 auto;
+
+    @include breakpoint(xl) {
+      max-width: 446px;
+    }
+    @include breakpoint(sm) {
+      max-width: 286px;
+    }
+  }
+
+  &__phone-img {
+    position: absolute;
+    width: 20%;
+    bottom: -54px;
+    right: -30px;
+    width: 20%;
+
+    @include breakpoint(sm) {
+      right: 30px;
+    }
+  }
+}

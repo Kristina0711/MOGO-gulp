@@ -1,0 +1,58 @@
+.servise {
+  &__img {
+    width: 100%;
+  }
+
+  &__rard-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #c6cbcd;
+    padding: 23px 0;
+    margin-bottom: 22px;
+    @include breakpoint(md) {
+      padding: 15px 0;
+    }
+  }
+  &__rard-item:first-child {
+    margin-bottom: 0;
+  }
+
+  &__card-img {
+    @include breakpoint(md) {
+      padding-left: 5px;
+    }
+  }
+
+  &__card-work {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #2d3033;
+    padding-right: 15px;
+  }
+
+  &__card-link:hover {
+    opacity: 0.5;
+  }
+
+  &__card-icon_down {
+    transform: rotate(180deg);
+  }
+  &__card-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #c6cbcd;
+    padding: 15px 0;
+
+    color: #2d3033;
+    margin-bottom: 22px;
+    @include breakpoint(md) {
+      padding: 10px 0;
+    }
+  }
+}

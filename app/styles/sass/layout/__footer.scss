@@ -1,0 +1,126 @@
+/* Footer */
+.footer {
+  padding-top: 62px;
+
+  &__col {
+    padding-bottom: 42px;
+  }
+
+  &__desc {
+    font-size: 13px;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: var(--grey);
+  }
+
+  &__followers-count {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--grey);
+  }
+
+  &__followers-text {
+    font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 5px;
+  }
+
+  &__followers-number {
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  &__follower-letter {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+
+  &__media-cta {
+    padding-right: 10px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__social-item {
+    margin-right: 10px;
+  }
+
+  &__social-item:last-child {
+    margin-right: 0;
+  }
+
+  &__social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__subscribe {
+    padding-top: 15px;
+  }
+
+  &__input {
+    text-align: center;
+    color: var(--grey);
+    padding: 10px 25px 10px 25px;
+    border: 1px solid var(--grey);
+  }
+
+  &__col-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 40px;
+  }
+
+  &__news-card {
+    margin-bottom: 24px;
+  }
+
+  &__news-card:last-child {
+    margin-bottom: 0;
+  }
+
+  &__inst-list {
+    margin-bottom: 30px;
+  }
+
+  &__inst-link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+  &__copyright {
+    border-top: 1px solid var(--grey);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 18px 0;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+  }
+}
+

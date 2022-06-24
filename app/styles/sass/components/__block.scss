@@ -1,0 +1,33 @@
+.block {
+  // .block__icon
+  padding-top: 84px;
+  padding-bottom: 66px;
+  @include breakpoint(md) {
+    padding-top: 44px;
+    padding-bottom: 36px;
+  }
+
+  &__icon {
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  }
+
+  &__title::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

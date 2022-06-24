@@ -1,0 +1,118 @@
+/* Component
+=========================== */
+.container {
+  padding: 0 15px;
+  max-width: calc(var(--content-width) + var(--mobile-padding) * 2);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row {
+  margin: 0 - var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $value from 1 through 12 {
+  // $width: percentage(1/$value);
+
+  .col-#{$value} {
+    // width: $width;
+    width: calc(100% / 12 *#{$value} - var(--gutter) * 2);
+    margin: 0 15px;
+  }
+
+  @include breakpoint(xl) {
+    .col-xl-#{$value} {
+      width: calc(100% / 12 *#{$value} - var(--gutter) * 2);
+      margin: 0 15px;
+    }
+  }
+  @include breakpoint(lg) {
+    .col-lg-#{$value} {
+      width: calc(100% / 12 *#{$value} - var(--gutter) * 2);
+      margin: 0 15px;
+    }
+  }
+  @include breakpoint(md) {
+    .col-md-#{$value} {
+      width: calc(100% / 12 *#{$value} - var(--gutter) * 2);
+      margin: 0 15px;
+    }
+  }
+  @include breakpoint(sm) {
+    .col-sm-#{$value} {
+      width: calc(100% / 12 *#{$value} - var(--gutter) * 2);
+      margin: 0 15px;
+    }
+  }
+  .offset-#{$value} {
+    // width: $width;
+    margin-left: calc(100% / 12 * #{$value} + var(--gutter));
+  }
+
+}
+.offset-0 {
+  margin-left: var(--gutter);
+}
+// .col-1 {
+//   width: calc(100% / 12 *  - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+
+// .col-3 {
+//   width: calc(100% / 12 * 3 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+
+// .col-4 {
+//   width: calc(100% / 12 * 4 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+
+// .col-5 {
+//   width: calc(100% / 12 * 5 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+
+// .col-6 {
+//   width: calc(100% / 12 * 6 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+// .col-7 {
+//   width: calc(100% / 12 * 7 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+// .col-md-12 {
+//   width: calc(100% / 12 * 12 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+// .col-12 {
+//   width: calc(100% / 12 * 12 - var(--gutter) * 2);
+//   margin: 0 15px;
+// }
+//   @include breakpoint(xl) {
+//   .col-lg-6 {
+//     margin: 0 15px;
+//     width: calc(100% / 12 * 6 - var(--gutter) * 2);
+//   }
+// }
+
+// @media (max-width: 992px) {
+//   .col-md-6 {
+//     margin: 0 15px;
+//     width: calc(100 / 12 * 6 - var(--gutter) * 2);
+//   }
+// }
+//   @include breakpoint(md) {
+//   .col-md-12 {
+//     margin: 0 15px;
+//     width: calc(100 / 12 * 12 - var(--gutter) * 2);
+//   }
+// }
+//   @include breakpoint(sm) {
+//   .col-sm-12 {
+//     margin: 0 15px;
+//     width: calc(100 / 12 * 12 - var(--gutter) * 2);
+//   }
+// }
